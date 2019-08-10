@@ -11,11 +11,29 @@
     font-family: 'Kaushan Script', cursive;
     font-weight: bold;
     text-align: center;
+    font-size: 50px;
 
 }
 
 #carouselExampleIndicators{
     width:50%;
-
+    margin-left: 25%;
     
+}
+
+
+#navbarToggleExternalContent{
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+#body{
+    background-image: "./assets/images/screen2.jpg";
+    background: no-repeat;
+    height: 3000px;
+}
+
+.titles{
+    margin-left: 50%;
+
 }

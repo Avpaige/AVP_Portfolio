@@ -1,0 +1,21 @@
+.carousel-item {
+    
+    height: 75%;
+
+
+}
+
+.header{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#carouselExampleIndicators{
+    width:50%;
+
+    
+}

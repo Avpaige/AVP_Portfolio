@@ -1,39 +1,26 @@
-.carousel-item {
-    
-    height: 75%;
-
-
-}
-
-.header{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-family: 'Kaushan Script', cursive;
-    font-weight: bold;
-    text-align: center;
-    font-size: 50px;
-
-}
-
-#carouselExampleIndicators{
-    width:50%;
-    margin-left: 25%;
-    
-}
-
-
-#navbarToggleExternalContent{
-    font-family: 'Lexend Exa', sans-serif;
-
-}
-
 #body{
-    background-image: "./assets/images/screen2.jpg";
-    background: no-repeat;
-    height: 3000px;
+    
+    text-align: center; 
+    font-family: 'Lexend Exa', sans-serif;
 }
 
-.titles{
-    margin-left: 50%;
+nav{
+    margin-bottom: 50px;
+}
 
+h1{
+    margin-bottom: 50px;
+
+}
+
+p{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 20px;
+}
+
+.logos{
+    width: 100px;
+    height: 100px;
+    float:left;
 }

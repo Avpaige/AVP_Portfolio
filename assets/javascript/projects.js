@@ -101,10 +101,7 @@ $(".btn").on("click", function (){
 });
 
 $("#liveLink").click(function(event) {
-    event.preventDefault();
-    
-    $("#liveLink").att("a").window.open("a");
-    alert("you clicked live link")
+   lnk.trigger("click");
   });
 
 

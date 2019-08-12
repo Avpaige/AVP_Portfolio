@@ -8,7 +8,7 @@
 .header{
     margin-top: 50px;
     margin-bottom: 50px;
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Lexend Exa', sans-serif;
     font-weight: bold;
     text-align: center;
     font-size: 50px;
@@ -23,7 +23,7 @@
 
 
 #navbarToggleExternalContent{
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Lexend Exa', sans-serif;
 
 }
 
@@ -36,4 +36,25 @@
 .titles{
     margin-left: 50%;
 
+}
+
+#sub{
+    font-size: 25px;
+
+
+}
+
+
+.pos-f-t{
+
+    text-align:center;
+}
+
+#sub:hover{
+    background-color: rgb(243, 243, 113);
+    border-radius: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    color:white;
+    
 }

@@ -1,20 +1,20 @@
 $(document).ready(function(){
 
-    
+   $("#projects").hide();
 //Projects Array and Function to Generate Buttons
 var projects = [
 {   name: "bWoke",
     git: "https://github.com/Kalamath/bWoke",
     live: "https://kalamath.github.io/bWoke/",
-    img: "./images/bwoke.jpg",
-    project: "bWoke is a coalition of wed developers at the intersection of entertainment and philanthorpy. Utilzing the Google Location, Spotify and Charity Navigator APIs to connect users with searched charities in a energizing and immersive experince.",
+    img: "./assets/images/bwoke.jpg",
+    project: "bWoke is a coalition of web developers at the intersection of entertainment and philanthorpy. Utilzing the Google Location, Spotify and Charity Navigator APIs to connect users with charities in a energizing and immersive experince.",
 
 },
 {
     name: "Rapper$ Delight",
     git: "https://github.com/Avpaige/RapperDelight",
     live: "https://avpaige.github.io/RapperDelight/",
-    img: "./images/rapper.png",
+    img: "./assets/images/rapper.png",
     project: "Leveraging the Giphy API, find gifs based on your favorite rappers or other search terms and dynamically populate the page as well get rating information.",
 
 },
@@ -22,7 +22,7 @@ var projects = [
     name: "Order Rush",
     git: "https://github.com/Avpaige/unit-4-game",
     live: "https://avpaige.github.io/unit-4-game/",
-    img: "./images/bwoke.jpg",
+    img: "./assets/images/order.png",
     project: "Generating a random order and menu price total using JQuery this game allows the use to test their math skills based on based arthmetic and randomization.",
 
 },
@@ -30,7 +30,7 @@ var projects = [
     name: "Beat Miss Cleo",
     git: "https://github.com/Avpaige/Psychic-Game",
     live: "https://avpaige.github.io/Psychic-Game/",
-    img: "./images/bwoke.jpg",
+    img:  "./assets/images/cleo.png",
     project: "Test your sixth sense by seeing if you can beat Miss Cleo in this vanilla Javascript based game that uses randomization.",
 
 },
@@ -38,14 +38,14 @@ var projects = [
     name: "Train Scheduler",
     git: "https://github.com/Avpaige/TrainTime",
     live: "https://avpaige.github.io/TrainTime/",
-    img: "./images/bwoke.jpg",
+    img: "./assets/images/train.png",
     project: "Never be late again with this train scheduler that leverages moment.js and jQuery to calculate a variety of times.",
 },
 {
     name: "Movie Trivia",
     git: "https://github.com/Avpaige/TriviaGame",
     live: "https://avpaige.github.io/TriviaGame/",
-    img: "./images/bwoke.jpg",
+    img:  "./assets/images/trivia.png",
     project: "Test your movie knowledege with this jQuery powered game with time events to keep you on the clock.",
 },
 
@@ -72,10 +72,11 @@ function getProjects (){
 getProjects();
 
 //Function to display projects on clik
-$(".btn").on("click", function (response){
+$(".btn").on("click", function (){
     event.preventDefault();
-    console.log(this)
-    // console.log (response)
+    $("#projImg").empty();
+    $("#projects").show();
+    $(".intro").hide();
     var liveLink = $(this).attr("live-link");
     var img = $(this).attr("img-src");
     var gitLink =  $(this).attr("git-link");
@@ -86,12 +87,45 @@ $(".btn").on("click", function (response){
     var lnk = $("<a>");
     lnk.attr("href", liveLink);
 
+    var newImg = $("<img>")
+    newImg.attr("img-src", img)
+
     $("#projName").text(name);
     $("#descript").text(descript);
-    $("#gitHub").append(glink);
-    $("#projImg").append(img);
-    $("#liveLink").append(lnk);
+    $("#git").append(glink);
+    $("#projImg").append(newImg);
+    $("#live").append(lnk);
 
 });
 
 });
+
+$("#liveLink").click(function(event) {
+    event.preventDefault();
+    
+    $("#liveLink").att("a").window.open("a");
+    alert("you clicked live link")
+  });
+
+
+
+
+// $("#live").on("click", function(){
+//     var lnk = $("<a>");
+
+//     $("#liveLink").attr("onclick", "window.location = this.href");
+
+//     window.location = lnk;  
+//     alert("test live"); 
+//     console.log(lnk)
+// });
+
+
+// $("#git").on("click", function(){
+//     var glink = $("<a>");
+//     $("#git").attr("href", glink);
+//      alert("test git");
+//     console.log(glnk)
+// });
+
+

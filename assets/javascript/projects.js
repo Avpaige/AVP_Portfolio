@@ -82,47 +82,30 @@ $(".btn").on("click", function (){
     var gitLink =  $(this).attr("git-link");
     var descript = $(this).attr("description");
     var name = $(this).attr("data-name");
-    var glink = $("<a>");
-    glink.attr("href", gitLink);
-    var lnk = $("<a>");
-    lnk.attr("href", liveLink);
-
     var newImg = $("<img>")
-    newImg.attr("img-src", img)
+    newImg.attr("src", img).addClass("newIMG")
 
     $("#projName").text(name);
     $("#descript").text(descript);
-    $("#git").append(glink);
+    $("#git").attr("data-link", gitLink);
     $("#projImg").append(newImg);
-    $("#live").append(lnk);
-
+    $("#live").attr("data-link", liveLink);
+ 
 });
 
-});
 
-$("#liveLink").click(function(event) {
-   lnk.trigger("click");
+$("#live").click(function() {
+    event.preventDefault();
+    var link = $(this).attr("data-link");
+    window.location.href=link;
+    console.log(link);
   });
 
+$("#git").click(function() {
+    event.preventDefault();
+    var link = $(this).attr("data-link");
+    window.location.href=link;
+    console.log(link);
+  });
 
-
-
-// $("#live").on("click", function(){
-//     var lnk = $("<a>");
-
-//     $("#liveLink").attr("onclick", "window.location = this.href");
-
-//     window.location = lnk;  
-//     alert("test live"); 
-//     console.log(lnk)
-// });
-
-
-// $("#git").on("click", function(){
-//     var glink = $("<a>");
-//     $("#git").attr("href", glink);
-//      alert("test git");
-//     console.log(glnk)
-// });
-
-
+});

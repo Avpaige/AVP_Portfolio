@@ -25,9 +25,9 @@ h1{
     
 }
 
-img{
-    height:20px;
-    width:20px;
+.newIMG{
+    height:400px;
+    width:600px;
 }
 
 #projName{

@@ -1,5 +1,5 @@
 #body{
-    
+    height: 1000px;
     text-align: center; 
     font-family: 'Lexend Exa', sans-serif;
 }
@@ -62,16 +62,18 @@ p{
     padding-left: 20%;
 
 }
-
-.logos:hover{
-    background-color: rgb(224, 218, 218); 
-   
-}
+  
 .allLogos{
-    margin-bottom: 15%; 
+    margin-bottom: 20%; 
 
 }
 
 .contact{
      font-family: 'Lexend Exa', sans-serif;
+}
+
+
+img:hover{
+
+    background-color: rgb(224, 218, 218); 
 }

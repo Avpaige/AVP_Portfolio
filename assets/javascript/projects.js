@@ -6,7 +6,7 @@ var projects = [
 {   name: "bWoke",
     git: "https://github.com/Kalamath/bWoke",
     live: "https://kalamath.github.io/bWoke/",
-    img: "./assets/images/bwoke.jpg",
+    img: "./assets/images/bwoke2.jpg",
     project: "bWoke is a coalition of web developers at the intersection of entertainment and philanthorpy. Utilzing the Google Location, Spotify and Charity Navigator APIs to connect users with charities in a energizing and immersive experince.",
 
 },

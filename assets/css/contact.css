@@ -24,3 +24,54 @@ p{
     height: 100px;
     float:left;
 }
+
+#gitImg{
+    height: 30px;
+    width:  30px;
+    margin-right:10px;
+}
+
+#inImg{
+    height: 30px;
+    width:  30px;
+}
+
+.logos{
+    margin-left: 8%;
+
+}
+
+#email{
+ 
+    height: 30px;
+    width:  30px;
+    margin-right:20px;
+}
+
+.allLogos{
+
+    margin-top: 5%;
+}
+
+#resume{
+    height:200px;
+    width:200px;
+}
+
+#phone{
+    padding-left: 20%;
+
+}
+
+.logos:hover{
+    background-color: rgb(224, 218, 218); 
+   
+}
+.allLogos{
+    margin-bottom: 15%; 
+
+}
+
+.contact{
+     font-family: 'Lexend Exa', sans-serif;
+}

@@ -53,7 +53,7 @@ $(document).ready(function () {
             name: "LIRI",
             git: "https://github.com/Avpaige/LIRI",
             live: "https://github.com/Avpaige/LIRI/tree/master/demo",
-            img: "./assets/images/liri.webm",
+            img: "./assets/images/liri.PNG",
             project: "A node based application LIRI bot that allows you to quickly search a variety of entertainment databases to find something to quickly listen to (Spotify API), Movie to watch (oMDB API) or upcoming concerts to attend (Bands in Town API)",
         },
         {

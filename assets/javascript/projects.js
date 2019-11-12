@@ -28,6 +28,14 @@ $(document).ready(function () {
 
         },
         {
+            name: "Ocean's Guess",
+            git: "https://github.com/Avpaige/ClickyGame",
+            live: "https://oceansguess.netlify.com/",
+            img: "https://oceansguess.netlify.com/",
+            project: "Test your memory and your heist planning skills!",
+
+        },
+        {
             name: "Beat Miss Cleo",
             git: "https://github.com/Avpaige/Psychic-Game",
             live: "https://avpaige.github.io/Psychic-Game/",
